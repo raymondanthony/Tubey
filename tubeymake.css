@@ -1,0 +1,31 @@
+html{ background:
+    /* top, transparent blue, faked with gradient */
+    linear-gradient(
+      rgba(120,25,10,0.5145),
+      rgba(120,25,10,0.5145)
+    ),
+    /* bottom, image */
+    url('https://clientwindows.com/desk.jpg') no-repeat center center fixed;
+
+  -ms-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -blink-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  filter: 
+-moz-background-attachment:fixed cover;
+    background-size: 100% 100%;
+
+}
+body{
+background-image:transparent;
+background-color:transparent;
+  -ms-background-color:transparent;
+  -webkit-background-color:transparent;
+  -moz-background-color:transparent;
+  -blink-background-color:transparent;
+  -o-background-color:transparent;color:whitesmoke;
+}
+
+

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<!-- 
+<script src="https://clientwindows.com/do/" defer="defer">
+-->
+<style>
+html{ background:
+    /* top, transparent blue, faked with gradient */
+    linear-gradient(
+      rgba(120,25,10,0.5145),
+      rgba(120,25,10,0.5145)
+    ),
+    /* bottom, image */
+    url('//clientwindows.com/desk.jpg') no-repeat center center fixed;
+
+  -ms-background-size: 100% auto;
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -blink-background-size: 100% auto;
+  -o-background-size: 100% auto;
+  background-size: 100% auto;
+  filter: 
+-moz-background-attachment:fixed cover;
+    background-size: 100% 100%;
+
+}
+body{
+background-image:transparent;
+background-color:transparent;
+  -ms-background-color:transparent;
+  -webkit-background-color:transparent;
+  -moz-background-color:transparent;
+  -blink-background-color:transparent;
+  -o-background-color:transparent;color:whitesmoke;
+}
+
+
+</style>
+</head>
+<body>
+
+<h3>Injector Demo</h3>
+<script>
+window.init=(function killer(){if(!c===null){delete c;};})
+document.onload=(function (){
+//temp fill by prompt
+var videoid=prompt('video id code:');
+var startl=prompt('seek time:');
+var dur=prompt('clip length:');
+
+// temp prefills
+videoid='M7lc1UVf-VE';startl=100;dur=10;
+
+var endl=eval(dur+startl);
+var hori =this.window.innerWidth;
+if(hori<150){hori= window.screen.availWidth;};
+ var vert = this.window.innerHeight;
+if(vert<150){vert= eval(hori / 1.25);};
+
+  var newurl='https:\/\/www.youtube.com\/embed\/'+videoid+'?enablejsapi=1&start='+startl+'&end='+endl+'&loop=0&autoplay=1&color=white&controls=1&modestbranding=1&origin=https:\/\/clientwindows.com&autohide=1&fs=1&showinfo=1&rel=1&vol=100&vq=highres';
+var style=document.createElement('style');
+var styleContent=document.createTextNode('video,#ytplayer,div,iframe,#player,#video{height:100vh;width:100vw;height:'+vert+'px;width:'+hori+'px;border:none;z-index:10;}');
+style.appendChild(styleContent);
+var mexit=document.getElementsByTagName('head');
+mexit[0].appendChild(style);
+
+
+var Pa;function Qa(){var a=k.MessageChannel;"undefined"===typeof a&&"undefined"!==typeof window&&window.postMessage&&window.addEventListener&&!C("Presto")&&(a=function(){var a=document.createElement("IFRAME");a.style.display="none";a.src="";document.documentElement.appendChild(a);var b=a.contentWindow,a=b.document;a.open();a.write("");a.close();var c="callImmediate"+Math.random(),d="file:"==b.location.protocol?"*":b.location.protocol+"//"+b.location.host,a=u(function(a){if(("*"==d||a.origin==d)&&a.data==
+c)this.port1.onmessage()},this);b.addEventListener("message",a,!1);this.port1={};this.port2={postMessage:function(){b.postMessage(c,d)}}});
+if("undefined"!==typeof a&&!C("Trident")&&!C("MSIE")){var b=new a,c={},d=c;b.port1.onmessage=function(){if(void 0!==c.next){c=c.next;var a=c.G;c.G=null;a()}};return function(a){d.next={G:a};}};}
+
+var 
+c=document.createElement("iframe");
+c.setAttribute("frameBorder",0);
+c.setAttribute("allowfullscreen",1);
+c.setAttribute("title","YouTube ");
+c.setAttribute("width",hori);
+c.setAttribute("height",vert);
+c.style.height=vert;
+c.style.width=hori;
+c.src=newurl;
+document.body.appendChild(c);
+})();
+</script>
+
+<!-- allowfullscreen allowtransparency="true" scrolling="no" allow-same-origin allow-scripts allow-popups allow-forms allow-top-navigation  scrolling="no" marginwidth="0" marginheight="0" frameborder="0" seamless="seamless" frameborder="0"
+-->
+<img src="https://clientwindows.com/ua-mailer.png" height="1" width="1" alt="">
+</body>
+</html>
