@@ -103,7 +103,7 @@ footer p {
 
 a {
   text-decoration: none;
-  color:purple;
+  color:tomato;
   text-shadow: none;
 
   transition: color 0.5s ease;
@@ -159,7 +159,7 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #222;
+  color: #898989;
   background-color: #fff;
 
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
@@ -287,12 +287,12 @@ Full-Width Styles
 }
 
 #header_wrap {
-  background: #212121;
-  background: -moz-linear-gradient(top, #373737, #212121);
-  background: -webkit-linear-gradient(top, #373737, #212121);
-  background: -ms-linear-gradient(top, #373737, #212121);
-  background: -o-linear-gradient(top, #373737, #212121);
-  background: linear-gradient(top, #373737, #212121);
+  background: tomato;
+  background: -moz-linear-gradient(top, red, tomato);
+  background: -webkit-linear-gradient(top,red, tomato);
+  background: -ms-linear-gradient(top, red,tomato);
+  background: -o-linear-gradient(top,red, tomato);
+  background: linear-gradient(top, red, tomato);
 }
 
 #header_wrap .inner {
