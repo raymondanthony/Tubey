@@ -49,6 +49,59 @@ Theme Styles
 *******************************************************************************/
 
 body {
+  background-image:transparent;
+background-color:transparent;
+  -ms-background-color:transparent;
+  -webkit-background-color:transparent;
+  -moz-background-color:transparent;
+  -blink-background-color:transparent;
+  -o-background-color:transparent;
+  text-decoration:none;
+  text-decoration: none;
+-webkit-font-smoothing:antialiased;
+-webkit-over-scrolling:touch;
+text-decoration:none;
+text-rendering: optimizelegibility;
+-webkit-font-smoothing:antialiased;
+-webkit-over-scrolling:touch;
+-moz-font-smoothing:antialiased;
+font-family:'Special Elite',RobotoDraft,Nono,sans-serif;
+font-family:'Special Elite',Lato,National,Candara,Calibri,Segoe,Arial,sans-serif;
+text-decoration:none;
+text-rendering: optimizelegibility;
+-webkit-font-smoothing:antialiased;
+-webkit-over-scrolling:touch;
+-moz-font-smoothing:antialiased;
+font-family:'Special Elite',RobotoDraft,Nono,sans-serif;
+font-family:'Special Elite',Lato,National,Candara,Calibri,Segoe,Arial,sans-serif;
+    font-variant-ligatures: no-common-ligatures;
+  -moz-font-feature-settings: "liga" 0, "clig" 0;
+  -ms-font-feature-settings: "liga" 0, "clig" 0;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  font-feature-settings: "liga" 0, "clig" 0;
+    font-variant-ligatures: contextual;
+    -moz-font-feature-settings: "calt";
+    -ms-font-feature-settings: "calt";
+    -webkit-font-feature-settings: "calt";
+    font-feature-settings: "calt";
+text-shadow: 4px 4px 9px #000;
+font-weight: 400;
+font-style: normal;
+line-height: 130%;
+cursor: auto;
+  font-variant-ligatures: no-common-ligatures;
+  -moz-font-feature-settings: "liga" 0, "clig" 0;
+  -ms-font-feature-settings: "liga" 0, "clig" 0;
+  -webkit-font-feature-settings: "liga" 0, "clig" 0;
+  font-feature-settings: "liga" 0, "clig" 0;
+    font-variant-ligatures: contextual;
+    -moz-font-feature-settings: "calt";
+    -ms-font-feature-settings: "calt";
+    -webkit-font-feature-settings: "calt";
+    font-feature-settings: "calt";
+color: #ffe;
+text-shadow: 4px 4px 9px #000;
+text-shadow: 0 0.032em 0 #b0b0b0, 0px 0.15em 0.11em rgba(0,0,0,0.15), 0px 0.25em 0.021em rgba(0,0,0,0.1), 0px 0.32em 0.32em rgba(0,0,0,0.1);
   box-sizing: border-box;
   color:#898989;
   background: #212121;
@@ -64,6 +117,11 @@ h1, h2, h3, h4, h5, h6 {
   color:#222222;
   font-family: 'Lucida Grande', 'Calibri', Helvetica, Arial, sans-serif;
   letter-spacing: -1px;
+  	margin:0;
+	font-family:inherit;
+	font-weight:bold;
+	color:inherit;
+	text-rendering:optimizelegibility
 }
 
 h1 {
@@ -159,22 +217,47 @@ p img {
 
 pre, code {
   width: 100%;
-  color: #898989;
-  background-color: #fff;
-
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-  font-size: 14px;
-
-  border-radius: 2px;
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
+	padding:0 3px 2px;
+	font-family:Menlo,Monaco,Consolas,"Courier New",monospace;
+	font-size:12px;
+	color:#333;
+	-webkit-border-radius:3px;
+	-moz-border-radius:3px;
+	border-radius:3px
 }
 
+code{
+	padding:2px 4px;
+	color:#d14;
+	background-color:#f7f7f9;
+	border:1px solid #e1e1e8
+}
 pre {
   width: 100%;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,.1);
   overflow: auto;
+}
+pre{
+	display:block;
+	padding:8.5px;
+	margin:0 0 9px;
+	font-size:12.025px;
+	line-height:18px;
+	word-break:break-all;
+	word-wrap:break-word;
+	white-space:pre;
+	white-space:pre-wrap;
+	background-color:#f5f5f5;
+	border:1px solid #ccc;
+	border:1px solid rgba(0,0,0,0.15);
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px
+}
+
+pre.prettyprint{
+	margin-bottom:18px
 }
 
 code {
@@ -187,6 +270,13 @@ pre code {
   display: block;
   box-shadow: none;
 }
+pre code{
+	padding:0;
+	color:inherit;
+	background-color:transparent;
+	border:0
+}
+
 
 blockquote {
   color: #666;
@@ -355,7 +445,7 @@ Full-Width Styles
 }
 
 #main_content_wrap {
-  background: #f2f2f2;
+  background: whitesmoke;
   border-top: 1px solid #111;
   border-bottom: 1px solid #111;
 }
@@ -365,7 +455,14 @@ Full-Width Styles
 }
 
 #footer_wrap {
-  background: #212121;
+  color:#fff;
+  background: tomato;
+  background: -moz-linear-gradient(top, red, tomato);
+  background: -webkit-linear-gradient(top,red, tomato);
+  background: -ms-linear-gradient(top, red,tomato);
+  background: -o-linear-gradient(top,red, tomato);
+  background: linear-gradient(top, red, tomato);
+
 }
 
 
